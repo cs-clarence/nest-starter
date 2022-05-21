@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    /* Language and Environment */
+    "lib": ["ESNext", "DOM", "WebWorker"]
+    /* Language and Environment */
+  }
+}
