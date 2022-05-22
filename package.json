@@ -1,5 +1,5 @@
 {
-  "name": "express-database-access",
+  "name": "nest-starter",
   "version": "0.1.0",
   "description": "",
   "type": "module",
@@ -9,8 +9,8 @@
     "test": "jest",
     "lint": "npx eslint ./src",
     "format": "npx prettier --write ./src",
-    "build": "npm run lint && node cli.cjs --prod",
-    "dev": "node cli.cjs --watch"
+    "build": "npm run lint && node cli/index.mjs build --prod src/index.ts",
+    "dev": "node cli/index.mjs watch -e src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -36,11 +36,13 @@
     "chalk": "^5.0.1",
     "cli-color": "^2.0.2",
     "command-line-args": "^5.2.1",
+    "commander": "^9.2.0",
     "esbuild": "^0.14.39",
     "esbuild-node-externals": "^1.4.1",
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "jest": "^28.1.0",
+    "json5": "^2.2.1",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
     "supertest": "^6.2.3",
