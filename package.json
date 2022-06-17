@@ -2,6 +2,7 @@
   "name": "nest-starter",
   "version": "0.1.0",
   "description": "",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -42,6 +43,7 @@
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "supertest": "^6.2.3",
+    "tsconfig": "github:cs-clarence/tsconfig",
     "typescript": "^4.7.3",
     "vite": "^2.9.12",
     "vite-plugin-node": "^1.0.0",

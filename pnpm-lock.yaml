@@ -23,6 +23,7 @@ specifiers:
   rimraf: ^3.0.2
   rxjs: ^7.5.5
   supertest: ^6.2.3
+  tsconfig: github:cs-clarence/tsconfig
   tslib: ^2.4.0
   typescript: ^4.7.3
   vite: ^2.9.12
@@ -56,6 +57,7 @@ devDependencies:
   prettier: 2.7.1
   rimraf: 3.0.2
   supertest: 6.2.3
+  tsconfig: github.com/cs-clarence/tsconfig/55acc590b67e0c2ad55eda30b96b706272e16022
   typescript: 4.7.3
   vite: 2.9.12
   vite-plugin-node: 1.0.0_vite@2.9.12
@@ -2631,4 +2633,10 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  github.com/cs-clarence/tsconfig/55acc590b67e0c2ad55eda30b96b706272e16022:
+    resolution: {tarball: https://codeload.github.com/cs-clarence/tsconfig/tar.gz/55acc590b67e0c2ad55eda30b96b706272e16022}
+    name: tsconfig
+    version: 1.0.2
     dev: true
