@@ -8,6 +8,7 @@ export default defineConfig(async () => {
       port: 3000,
     },
     build: {
+      target: "esnext",
       emptyOutDir: true,
       minify: true,
       rollupOptions: {
@@ -22,7 +23,7 @@ export default defineConfig(async () => {
     plugins: [
       ...VitePluginNode({
         adapter: "nest",
-        tsCompiler: "esbuild",
+        tsCompiler: "swc",
         appPath: "./src/index.ts",
         appName: "app",
         exportName: "app",
