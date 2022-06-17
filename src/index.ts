@@ -1,22 +1,17 @@
 import { NestFactory } from "@nestjs/core";
-import {
-  ExpressAdapter,
-  NestExpressApplication,
-} from "@nestjs/platform-express";
+import type { NestExpressApplication } from "@nestjs/platform-express";
+import { AppModule } from "$app.module";
+
+export const app = NestFactory.create<NestExpressApplication>(AppModule);
 
 async function bootstrap() {
-  const { AppModule } = await import("$app.module");
-
   process.env.NEST_DEBUG = `${
     process.env.NODE_ENV?.toLowerCase() !== "production"
   }`;
 
-  const app = await NestFactory.create<NestExpressApplication>(
-    AppModule,
-    new ExpressAdapter(),
-  );
-
-  app.listen(3000);
+  (await app).listen(3000);
 }
 
-bootstrap();
+if (import.meta.env.PROD) {
+  bootstrap();
+}

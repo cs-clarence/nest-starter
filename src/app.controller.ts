@@ -9,4 +9,9 @@ export class AppController {
   async getHello(@Param("name") param: string) {
     return { message: this.appService.getHello(param) };
   }
+
+  @Get()
+  async get() {
+    return "Hello, Nigger";
+  }
 }
