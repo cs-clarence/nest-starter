@@ -41,7 +41,6 @@
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.7.1",
     "supertest": "^6.2.3",
-    "tsconfig": "github:cs-clarence/tsconfig",
     "typescript": "^4.7.3",
     "vite": "^2.9.12",
     "vite-node": "^0.15.1",
